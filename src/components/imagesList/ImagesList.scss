@@ -21,3 +21,25 @@
     margin: 10px 0;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .imagesList {
+    width: 500px;
+
+    &__catsBlock {
+      width: 500px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  .imagesList {
+    width: 350px;
+
+    &__catsBlock {
+      width: 350px;
+      justify-content: center;
+    }
+  }
+}

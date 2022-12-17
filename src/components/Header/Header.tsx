@@ -36,8 +36,8 @@ export const Header = () => {
   };
 
   useEffect(() => {
-    fetchCategories();
-  }, []);
+    if (!Object.keys(categoriesData).length) fetchCategories();
+  }, [fetchCategories, categoriesData]);
 
   return (
     <header>
