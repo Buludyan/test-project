@@ -1,9 +1,10 @@
 import { useActions } from "./hooks/actions";
 import { useTypedSelector } from "./hooks/selector";
 
-import "./App.scss";
 import { Header } from "./components/Header/Header";
-import ImagesList from "./components/imagesList/ImagesList";
+import ImagesList from "./components/ImagesList/ImagesList";
+
+import "./App.scss";
 
 function App() {
   const { catsData } = useTypedSelector((state) => state.cats);
